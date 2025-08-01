@@ -1,2 +1,8 @@
 # csv-analyzer-
-This project is a command-line CSV Analyzer powered by local LLMs (like LLaMA via Ollama), allowing you to ask intelligent questions about your CSV files using plain English. It provides a simple yet powerful way to interact with tabular data without writing complex queries or uploading sensitive files online.
+This project is a simple yet powerful CSV Analyzer that leverages local Large Language Models (LLMs) via the Ollama platform, such as LLaMA 3, to answer natural language questions about CSV files. Instead of writing SQL queries or manually analyzing spreadsheet data, users can interact with their data conversationally — just by asking questions like “What is the total sales?” or “How many unique customers are there?”
+
+The tool reads a CSV file using Python’s Pandas library, converts its contents into a readable text format, and sends it to a locally running LLM through Ollama. The model then interprets both the data and the user’s question to return a relevant, human-like response. Since everything runs locally, no data is uploaded to the cloud, making it ideal for users working with private, sensitive, or offline datasets.
+
+This project is built entirely in Python and is easy to run from the terminal or any Python environment. It requires minimal setup, making it perfect for students, researchers, analysts, and developers who want to explore how to use LLMs for data understanding. There is no UI in this version — the tool is command-line based — but it’s modular enough to be extended into a web app using frameworks like Streamlit or Flask in the future.
+
+Key highlights include offline operation, privacy-first design, fast and simple setup, and the ability to answer complex queries without writing code or formulas. Whether you're performing exploratory data analysis or automating insights from large CSV files, this tool provides an intuitive interface between human questions and tabular data using AI.
